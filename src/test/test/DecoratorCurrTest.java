@@ -3,7 +3,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 import Decorator.Currency;
 
-public class FactoryCurrTest {
+public class DecoratorCurrTest {
 
     Currency curr1;
     int curr1Expected;

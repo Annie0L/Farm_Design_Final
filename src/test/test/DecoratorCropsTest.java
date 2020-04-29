@@ -3,7 +3,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 import Decorator.Crops;
 
-public class FactoryCropsTest {
+public class DecoratorCropsTest {
 
     Crops crops1;
     int crops1Expected;

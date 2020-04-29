@@ -38,7 +38,12 @@ tasks.withType(Checkstyle) {
         toolVersion = "8.8"
 }
 
-
+test {
+    reports {
+        junitXml.enabled = false
+        html.enabled = true
+    }               
+}
 
  // To generate an HTML report instead of XML
 tasks.withType(com.github.spotbugs.SpotBugsTask) {

@@ -4,7 +4,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 import Decorator.Farmer;
 
-public class FactoryFarmerTest {
+public class DecoratorFarmerTest {
 
     // A sample Cart
 

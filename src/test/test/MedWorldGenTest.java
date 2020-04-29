@@ -23,7 +23,6 @@ public class MedWorldGenTest {
         wrld2 = new WorldGenerator();
         wrld2Expected = wrld2.getDayTime();
     }
-    
 
 
     // wrld1
@@ -31,6 +30,7 @@ public class MedWorldGenTest {
     public void wrld1() {
         for (int i = 0; i < 7; i++) {
             wrld1.generateFarm();
+            wrld2.printInitial();
         }
         assertNotNull(wrld1Expected);
     }
@@ -38,7 +38,23 @@ public class MedWorldGenTest {
     // wrld2
     @Test
     public void wrld2() {
-        wrld2.printInitial();
+        for (int i = 0; i < 7; i++) {
+            wrld2.printInitial();
+        }
+        wrld2.updateAnimals();
+        wrld2.updateState();
+        wrld2.updateState();
+        wrld2.updateState();
+        wrld2.disasterAnimals();
+        wrld2.disasterAnimals();
+        wrld2.disasterAnimals();
+        wrld2.disasterAnimals();
+        wrld2.updateCurrency();
+        wrld2.updateCurrency();
+        wrld2.updateCurrency();
+        wrld2.updateCurrency();
+        wrld2.updateCurrency();
+        wrld2.updateCrops();
         assertNotNull(wrld2Expected);
     }
     
