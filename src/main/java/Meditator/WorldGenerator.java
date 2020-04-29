@@ -138,10 +138,10 @@ public class WorldGenerator {
     public void updateAnimals() {
         if (count % 4 == 0) {
             if (farmType.equals("Animal")) {
-                animals.getAnimals().setNumAnimals(animals.getAnimals().getNumAnimals()+2);
+                animals.getAnimals().setNumAnimals(animals.getAnimals().getNumAnimals() + 2);
             }
             else if (farmType.equals("Hybrid")) {
-                hybrid.getAnimals().setNumAnimals(hybrid.getAnimals().getNumAnimals()+2);                 
+                hybrid.getAnimals().setNumAnimals(hybrid.getAnimals().getNumAnimals() + 2);                 
             }
         }
     }
@@ -156,21 +156,21 @@ public class WorldGenerator {
         if (count % 3 == 0) {
             System.out.println("Crops harvested.");
             crops.getCrops().setNumCrops(0);  
-            curr.setCurrency(curr.getCurrency()+500);
+            curr.setCurrency(curr.getCurrency() + 500);
         }
     }
     
     public void disasterAnimals() {
         if (count % 9 == 0) {
             if(farmType.equals("Crop")) {
-                crops.getCrops().setNumCrops(crops.getCrops().getNumCrops()-10);
+                crops.getCrops().setNumCrops(crops.getCrops().getNumCrops() - 10);
             }
             else if (farmType.equals("Animal")) {
-                animals.getAnimals().setNumAnimals(animals.getAnimals().getNumAnimals()-3);
+                animals.getAnimals().setNumAnimals(animals.getAnimals().getNumAnimals() - 3);
             }
             else if (farmType.equals("Hybrid")) {
-                hybrid.getCrops().setNumCrops(hybrid.getCrops().getNumCrops()-3);
-                hybrid.getAnimals().setNumAnimals(hybrid.getAnimals().getNumAnimals()-3);
+                hybrid.getCrops().setNumCrops(hybrid.getCrops().getNumCrops() - 3);
+                hybrid.getAnimals().setNumAnimals(hybrid.getAnimals().getNumAnimals() - 3);
             }
         }
     }
@@ -187,23 +187,23 @@ public class WorldGenerator {
          if (count % 2 == 0) {
             if (count % 6 == 0) {
                 if(farmType.equals("Crop")) {
-                    modFCurr = (double)((farmerAffinity*100)/4);
-                    modCCurr = (double)((plantAffinity*100)/4);
-                    curr.setCurrency(modFCurr+modCCurr+curr.getCurrency());
+                    modFCurr = (double)((farmerAffinity * 100)/4);
+                    modCCurr = (double)((plantAffinity * 100)/4);
+                    curr.setCurrency(modFCurr+modCCurr + curr.getCurrency());
                 }
                 else if (farmType.equals("Animal")) {
-                    modFCurr = (double)((farmerAffinity*100)/4);
-                    modACurr = (double)((animalAffinity*100)/4);
-                    curr.setCurrency(modFCurr+modACurr+curr.getCurrency());
+                    modFCurr = (double)((farmerAffinity * 100)/4);
+                    modACurr = (double)((animalAffinity * 100)/4);
+                    curr.setCurrency(modFCurr + modACurr + curr.getCurrency());
                 }
                 else if (farmType.equals("Hybrid")) {
-                    modFCurr = (double)((farmerAffinity*100)/4);
-                    modCCurr = (double)((plantAffinity*100)/4);
-                    modACurr = (double)((animalAffinity*100)/4);                   
+                    modFCurr = (double)((farmerAffinity * 100)/4);
+                    modCCurr = (double)((plantAffinity * 100)/4);
+                    modACurr = (double)((animalAffinity * 100)/4);                   
                     curr.setCurrency(modACurr + modFCurr + modCCurr+ curr.getCurrency());
                 }
             }
-            curr.setCurrency(curr.getCurrency()+100);
+            curr.setCurrency(curr.getCurrency() + 100);
          }
     }
 
