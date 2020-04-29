@@ -1,6 +1,5 @@
 package Factory;
 
-public class AnimalFarm extends Farm{
-
+public class AnimalFarm extends Farm {
 
 }

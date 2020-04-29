@@ -50,6 +50,11 @@ public class WorldGenerator {
         }
     }
     
+    public String getFarmType() {
+        return farmType;
+        
+    }
+    
     public String randFarm() {
         String choice = "";
         Random r = new Random();
@@ -64,6 +69,10 @@ public class WorldGenerator {
             choice = "Hybrid"; 
         }
         return choice;
+    }
+    
+    public String getDayTime() {
+        return daytime;
     }
     
     public void printInitial() {
@@ -196,6 +205,10 @@ public class WorldGenerator {
             }
             curr.setCurrency(curr.getCurrency()+100);
          }
+    }
+    
+    public void setCount(int count) {
+         this.count = count;
     }
 
 }

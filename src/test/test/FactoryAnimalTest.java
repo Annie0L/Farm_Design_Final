@@ -1,9 +1,10 @@
+package test;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
 import Decorator.Animals;
 
-public class MeditatorAnimalTest {
+public class FactoryAnimalTest {
 
     // A sample Cart
 
@@ -27,6 +28,7 @@ public class MeditatorAnimalTest {
         
         anim3 = new Animals();
         anim3Expected = 2;
+        anim3.setNumAnimals(anim3Expected);
     }
 
     // anim1
@@ -47,6 +49,6 @@ public class MeditatorAnimalTest {
     @Test
     public void anim4() {
         double amount = anim3.getNumAnimals();
-        assertEquals(anim3Expected, amount, 0);
+        assertEquals(amount, anim3Expected, 0);
     }
 }
