@@ -1,3 +1,5 @@
+Video demonstration: https://youtu.be/J9ovRoF2H_s
+
 Design Pattern I
 > Name: Decorator pattern
 
