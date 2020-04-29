@@ -187,28 +187,24 @@ public class WorldGenerator {
          if (count % 2 == 0) {
             if (count % 6 == 0) {
                 if(farmType.equals("Crop")) {
-                    modFCurr = ((farmerAffinity*100)/4);
-                    modCCurr = ((plantAffinity*100)/4);
+                    modFCurr = (double)((farmerAffinity*100)/4);
+                    modCCurr = (double)((plantAffinity*100)/4);
                     curr.setCurrency(modFCurr+modCCurr+curr.getCurrency());
                 }
                 else if (farmType.equals("Animal")) {
-                    modFCurr = ((farmerAffinity*100)/4);
-                    modACurr = ((animalAffinity*100)/4);
+                    modFCurr = (double)((farmerAffinity*100)/4);
+                    modACurr = (double)((animalAffinity*100)/4);
                     curr.setCurrency(modFCurr+modACurr+curr.getCurrency());
                 }
                 else if (farmType.equals("Hybrid")) {
-                    modFCurr = ((farmerAffinity*100)/4);
-                    modCCurr = ((plantAffinity*100)/4);
-                    modACurr = ((animalAffinity*100)/4);                   
+                    modFCurr = (double)((farmerAffinity*100)/4);
+                    modCCurr = (double)((plantAffinity*100)/4);
+                    modACurr = (double)((animalAffinity*100)/4);                   
                     curr.setCurrency(modACurr + modFCurr + modCCurr+ curr.getCurrency());
                 }
             }
             curr.setCurrency(curr.getCurrency()+100);
          }
-    }
-    
-    public void setCount(int count) {
-         this.count = count;
     }
 
 }
